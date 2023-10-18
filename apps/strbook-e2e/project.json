@@ -1,7 +1,7 @@
 {
-  "name": "undefined-e2e",
+  "name": "strbook-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/undefined-e2e/src",
+  "sourceRoot": "apps/strbook-e2e/src",
   "projectType": "application",
   "targets": {
     "build-ios": {
@@ -22,16 +22,16 @@
       "executor": "@nx/detox:test",
       "options": {
         "detoxConfiguration": "ios.sim.local",
-        "buildTarget": "undefined-e2e:build-ios"
+        "buildTarget": "strbook-e2e:build-ios"
       },
       "configurations": {
         "bare": {
           "detoxConfiguration": "ios.sim.debug",
-          "buildTarget": "undefined-e2e:build-ios:bare"
+          "buildTarget": "strbook-e2e:build-ios:bare"
         },
         "production": {
           "detoxConfiguration": "ios.sim.release",
-          "buildTarget": "undefined-e2e:build-ios:production"
+          "buildTarget": "strbook-e2e:build-ios:production"
         }
       }
     },
@@ -53,16 +53,16 @@
       "executor": "@nx/detox:test",
       "options": {
         "detoxConfiguration": "android.emu.local",
-        "buildTarget": "undefined-e2e:build-android"
+        "buildTarget": "strbook-e2e:build-android"
       },
       "configurations": {
         "bare": {
           "detoxConfiguration": "android.emu.debug",
-          "buildTarget": "undefined-e2e:build-android:bare"
+          "buildTarget": "strbook-e2e:build-android:bare"
         },
         "production": {
           "detoxConfiguration": "android.emu.release",
-          "buildTarget": "undefined-e2e:build-android:production"
+          "buildTarget": "strbook-e2e:build-android:production"
         }
       }
     },
@@ -70,10 +70,10 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/undefined-e2e/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/strbook-e2e/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": ["undefined"]
+  "implicitDependencies": ["strbook"]
 }

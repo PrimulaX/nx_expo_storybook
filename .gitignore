@@ -55,3 +55,6 @@ cache/
 
 
 apps/undefined-e2e/artifacts
+apps/my-app-e2e/artifacts
+strbook-e2e/artifacts
+apps/strbook-e2e/artifacts

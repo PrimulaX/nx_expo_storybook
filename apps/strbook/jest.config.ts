@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'undefined',
+  displayName: 'strbook',
   resolver: '@nx/jest/plugins/resolver',
   preset: 'jest-expo',
   transformIgnorePatterns: [
